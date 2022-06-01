@@ -6,14 +6,14 @@ This mocks download 4 url pages and write them into files.
 - https://docs.aiohttp.org/en/stable/
 - https://github.com/mosquito/aiofile
 
-### Test Results
+### Test Results of Downloading 4 Pages
 
-| Method                                                             | Time Spent  |
-|--------------------------------------------------------------------|-------------|
-| [Multi Threading](test_multithreading.py)                          | 3.06s       |
-| [Multi Processing Thread Pool](test_multiprocessing_ThreadPool.py) | 1.78s       |
-| [Multi Processing Pool](test_multiprocessing_Pool.py)              | 2.02s       |
-| [Asyncio](test_asyncio.py)                                         | 1.70s       |
+| Method                                                             | Time Spent |
+|--------------------------------------------------------------------|------------|
+| [Multi Threading](test_multithreading.py)                          | 1.72s      |
+| [Multi Processing Thread Pool](test_multiprocessing_ThreadPool.py) | 1.78s      |
+| [Multi Processing Pool](test_multiprocessing_Pool.py)              | 2.02s      |
+| [Asyncio](test_asyncio.py)                                         | 1.70s      |
 
 
 ### Multi Processing Pool Methods Differences

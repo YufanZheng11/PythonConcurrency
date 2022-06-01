@@ -17,10 +17,11 @@ def getJson(url, filename):
 def getAll():
     threads = []
     for i, url in enumerate(urls):
-        threads.append(Thread(target=getJson, args=(url, f"{i+1}.html")))
+        thread = Thread(target=getJson, args=(url, f"{i+1}.html"))
+        threads.append(thread)
+        thread.start()
 
     for thread in threads:
-        thread.start()
         thread.join()
 
 
